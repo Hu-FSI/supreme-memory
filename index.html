@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="流固耦合动力学与科学机器学习研究者的个人学术主页"
+    >
+    <meta name="theme-color" content="#f4f0e8">
+    <title>姓名 / NAME · 学术主页</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转至主要内容</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span>姓名 / NAME</span>
+        </a>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="打开导航菜单"
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="主要导航">
+          <a class="active" href="#home">首页</a>
+          <a href="#research">研究</a>
+          <a href="#projects">项目</a>
+          <a href="#outputs">成果</a>
+          <a href="#experience">经历</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ACADEMIC PROFILE · 2026</p>
+          <h1>流固耦合动力学与<br>科学机器学习研究者</h1>
+          <p class="hero-summary">
+            关注输流管道振动、涡激振动、PINNs 与反向参数识别，尝试以物理建模和机器学习理解复杂动力系统。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              查看研究项目 <span aria-hidden="true">→</span>
+            </a>
+            <a class="button button-quiet" href="#contact">联系我</a>
+          </div>
+          <ul class="keywords" aria-label="研究关键词">
+            <li>PIPE VIBRATION</li>
+            <li>VORTEX-INDUCED VIBRATION</li>
+            <li>PHYSICS-INFORMED LEARNING</li>
+            <li>INVERSE IDENTIFICATION</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" role="img" aria-label="输流管道振动概念图">
+          <img src="assets/hero-pipe.png" alt="弯曲管道、振动轨迹与测量节点的科研线稿">
+          <span class="figure-label figure-label-one">01</span>
+          <span class="figure-label figure-label-two">02</span>
+          <p class="figure-caption">FLOW–STRUCTURE INTERACTION<br>CONCEPT SKETCH</p>
+        </div>
+      </section>
+
+      <section class="research section-shell ruled-section" id="research">
+        <div class="section-heading reveal">
+          <p class="section-index">01 / RESEARCH</p>
+          <h2>研究方向</h2>
+          <p>从机理建模、数值求解到数据驱动辨识，建立能够解释、预测并加速复杂结构响应的研究链条。</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <span>01</span>
+            <h3>输流管道非线性动力学</h3>
+            <p>研究流速、几何非线性及碰撞约束对管道稳定性、分岔路径和混沌响应的影响。</p>
+            <ul><li>Galerkin 离散</li><li>非线性振动</li><li>碰撞与分岔</li></ul>
+          </article>
+          <article class="research-card reveal">
+            <span>02</span>
+            <h3>曲管涡激振动</h3>
+            <p>结合理论模型与实验测量，分析曲率、模态竞争和流体力演化所导致的多方向响应。</p>
+            <ul><li>尾流振子</li><li>多模态耦合</li><li>实验验证</li></ul>
+          </article>
+          <article class="research-card reveal">
+            <span>03</span>
+            <h3>科学机器学习与反问题</h3>
+            <p>使用 PINNs、EKF/EnKF 与稀疏模型，从有限观测中识别未知参数、外载荷及控制方程。</p>
+            <ul><li>PINNs</li><li>在线参数更新</li><li>模型发现</li></ul>
+          </article>
+          <article class="research-card reveal">
+            <span>04</span>
+            <h3>稀疏传感与全场重构</h3>
+            <p>融合应变、位移锚点与弱物理约束，实现复杂柔性结构全场位移的高效重构。</p>
+            <ul><li>逆有限元</li><li>传感优化</li><li>物理残差修正</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-shell ruled-section" id="projects">
+        <div class="section-heading reveal">
+          <p class="section-index">02 / SELECTED WORK</p>
+          <h2>代表项目</h2>
+          <p>以下内容是适合学术主页展示的示例结构，可替换为你的论文、课题或实验项目。</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project reveal">
+            <div class="project-number">A</div>
+            <div>
+              <p class="project-type">NONLINEAR DYNAMICS</p>
+              <h3>弹性约束下输流悬臂管的复杂动力学</h3>
+              <p>面向周期、多周期、准周期与混沌响应，构建能够描述偏置约束和大幅运动的高阶动力学模型。</p>
+            </div>
+            <div class="project-meta"><span>理论建模</span><span>数值分析</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="project-number">B</div>
+            <div>
+              <p class="project-type">VORTEX-INDUCED VIBRATION</p>
+              <h3>三维曲管涡激振动的建模与实验验证</h3>
+              <p>研究横流向与顺流向响应、平均变形和高阶模态转换，并以多视角实验数据验证模型。</p>
+            </div>
+            <div class="project-meta"><span>流固耦合</span><span>实验研究</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="project-number">C</div>
+            <div>
+              <p class="project-type">SCIENTIFIC MACHINE LEARNING</p>
+              <h3>物理信息网络与滤波算法的参数反演</h3>
+              <p>由稀疏、含噪响应恢复系统状态，并通过滤波框架在线更新尾流模型或动力学方程中的未知系数。</p>
+            </div>
+            <div class="project-meta"><span>PINNs</span><span>EKF / EnKF</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="outputs section-shell ruled-section" id="outputs">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / OUTPUTS</p>
+          <h2>研究成果</h2>
+          <p>为避免虚构成果，首版保留规范化条目模板；替换后可链接 DOI、期刊页面、代码和数据。</p>
+        </div>
+
+        <div class="output-layout">
+          <div class="output-tabs reveal" role="tablist" aria-label="成果分类">
+            <button class="tab active" type="button" role="tab" aria-selected="true" data-filter="all">全部</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="paper">论文</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="patent">专利</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-filter="code">代码</button>
+          </div>
+          <div class="output-list">
+            <article class="output-item reveal" data-type="paper">
+              <span class="output-year">2026</span>
+              <div><p>论文 · PAPER</p><h3>在此填写论文题目</h3><span>作者列表 · 期刊名称 · DOI</span></div>
+              <a href="#contact" aria-label="联系作者了解该论文">↗</a>
+            </article>
+            <article class="output-item reveal" data-type="patent">
+              <span class="output-year">2026</span>
+              <div><p>专利 · PATENT</p><h3>在此填写专利或软件著作权名称</h3><span>发明人 · 申请号 / 授权号</span></div>
+              <a href="#contact" aria-label="联系作者了解该专利">↗</a>
+            </article>
+            <article class="output-item reveal" data-type="code">
+              <span class="output-year">2025</span>
+              <div><p>代码 · CODE</p><h3>在此填写开源代码或数据集名称</h3><span>GitHub / 数据仓库链接</span></div>
+              <a href="#contact" aria-label="联系作者了解该代码">↗</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-shell ruled-section" id="experience">
+        <div class="section-heading reveal">
+          <p class="section-index">04 / EXPERIENCE</p>
+          <h2>教育与经历</h2>
+          <p>用简短时间线保留必要的学术身份信息，不公开生日、住址、证件号等敏感数据。</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <time>20XX — 至今</time><div><h3>博士研究生 · 学校名称</h3><p>专业或学院名称 · 研究方向：流固耦合动力学与科学机器学习</p></div>
+          </article>
+          <article class="timeline-item reveal">
+            <time>20XX — 20XX</time><div><h3>硕士研究生 · 学校名称</h3><p>专业或学院名称 · 在此填写主要研究经历</p></div>
+          </article>
+          <article class="timeline-item reveal">
+            <time>20XX — 20XX</time><div><h3>本科 · 学校名称</h3><p>专业名称 · 在此填写学位信息</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact">
+        <div class="contact-panel reveal">
+          <p class="section-index">05 / CONTACT</p>
+          <h2>欢迎交流研究问题与合作机会。</h2>
+          <p>建议仅公开工作邮箱。个人手机号、家庭住址和证件信息不应出现在公开学术主页中。</p>
+          <div class="contact-links">
+            <a href="mailto:name@university.edu">name@university.edu <span>↗</span></a>
+            <a href="#">Google Scholar <span>↗</span></a>
+            <a href="#">ORCID <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <span>© <span id="year"></span> 姓名 / NAME</span>
+      <span>以物理理解复杂系统</span>
+      <a href="#top">返回顶部 ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
